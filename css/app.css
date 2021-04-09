@@ -48,3 +48,41 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+hr {
+    margin-top: -2px;
+    margin-bottom: 0.6rem;
+}
+.card-body {
+    padding-top: 0.5rem;
+}
+.card .col-img {
+    max-width: 122px;
+}
+.card {
+    box-shadow: 0 10px 20px 5px rgb(0 0 0 / 7%);
+    border: 0;
+}
+
+.spinner {
+    border: 4px solid silver;
+    border-top: 4px solid #337AB7;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 500ms linear infinite;
+    top: 40%;
+    left: 49%;
+    position: relative;
+    margin-top:10px
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
