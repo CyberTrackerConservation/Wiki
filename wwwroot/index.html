@@ -8,7 +8,9 @@
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
-    <link href="Wiki.styles.css" rel="stylesheet" />    
+    <link href="Wiki.styles.css" rel="stylesheet" />
+
+    <script src="_framework/blazor.webassembly.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,50 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="js/JavaScript.js"></script>-->
+
+    <script type="text/javascript">
+        function onBlazorReady() {
+            $(".panel-content").click(function (e) {
+                //e.preventDefault();
+                var divid = $(this).attr('id');
+                $('html,body').animate({
+                    scrollTop: $("#div" + divid).offset().top - 60
+                }, 'slow');
+            });
+
+            $("#faqhideunhide").click(function () {
+                if ($('#divFaqQuestions').is(":visible")) {
+                    $("#faqhideunhide").text('show');
+                }
+                else {
+                    $("#faqhideunhide").text('hide');
+                }
+                $("#divFaqQuestions").slideToggle("slow");
+            });
+
+            $("#devicehideshow").click(function () {
+                if ($('#divdevicecontent').is(":visible")) {
+                    $("#devicehideshow").text('show');
+                }
+                else {
+                    $("#devicehideshow").text('hide');
+                }
+                $("#divdevicecontent").slideToggle("slow");
+            });
+
+            $(".device-content").click(function (e) {
+                var divid = $(this).attr('id');
+                $('html,body').animate({
+                    scrollTop: $("#div" + divid).offset().top - 60
+                }, 'slow');
+            });
+        }
+    </script>
+
 </body>
 
 </html>

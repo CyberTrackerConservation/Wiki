@@ -1,0 +1,797 @@
+﻿@page "/faq"
+<h3>FAQ</h3>
+<hr />
+
+<style type="text/css">
+    .panel-group {
+        margin-bottom: 20px;
+    }
+
+    .panel-group .panel {
+        margin-bottom: -8px;
+        border-radius: 4px;
+    }
+
+    .panel-default {
+        border-color: #ddd;
+    }
+
+    .panel {
+        margin-bottom: 10px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+        box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    }
+
+    .panel-default > .panel-heading {
+        color: #333;
+        background-color: #f5f5f5;
+        border-color: #ddd;
+    }
+
+    .panel-group .panel-heading {
+        border-bottom: 0;
+    }
+
+    .panel-heading {
+        padding: 10px 15px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .panel-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        color: inherit;
+    }
+</style>
+
+
+<div><strong>Contents</strong>  [<a href="javascript:void(0);" id="faqhideunhide">hide</a>]</div>
+<br />
+<div id="divFaqQuestions">
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq1">1) What is CyberTracker?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq2">2) How much does CyberTracker cost?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq3">3) Where can I get the latest version of CyberTracker?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq4">4) CyberTracker contains some GIS functionality, but I need more</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq5">5) How do I get new features into CyberTracker?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq6">6) Which desktop operating system does CyberTracker run on?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq7">7) What mobile devices does CyberTracker support?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq8">8) Can I collect data with both Windows Mobile and Android devices at the same time?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq9">9) How do I change the screen type, e.g. from radio list to check list?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq10">10) How can I install CyberTracker on my Windows Mobile SD card?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq11">11) Does CyberTracker support collection of sightings on a laptop or desktop computer?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq12">12) Why can't I edit data in a query table?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq13">13) How do I export sightings that don't have Latitude/Longitude to an ESRI Shapefile?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq14">14) Why don't my sightings save?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq15">15) Why do I get the message "Time out of sync"?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq16">16) Why do I get the message "Version Error - resync"?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq17">17) When is my data downloaded from my device?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq18">18) What are timer tracks?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq19">19) How can I edit my timer tracks?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq20">20) How do I make the screen state persist between sightings, e.g. so a list keeps it's selection?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq21">21) What does the GPS Accuracy number mean?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq22">22) Does CyberTracker support Differential GPS?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq23">23) What are the different states for the GPS triangle button?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq24">24) How can I get my RangeFinder and my GPS to both auto-detect without conflict?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq25">25) What RangeFinders does CyberTracker support?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq26">26) How can I export data that I collect back to my GPS?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq27">27) What is the difference between a screen and a sub-screen?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq28">28) How do Paths work?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq29">29) How does the Element Formula control work?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq30">30) How to bind a bluetooth device on Windows Mobile?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq31">31) What does "No Result: Value not saved" and "No Result: Text not saved" mean?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq32">32) What is "Kiosk Mode" and how can I set it up?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq33">33) How can "Kiosk Mode" be bypassed in the field?</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="javascript:void(0);" class="panel-content" id="faq34">34) CyberTracker reports that it cannot install to a Windows Mobile device: INF error</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+
+    <p id="divfaq1"><strong id="What_is_CyberTracker.3F">What is CyberTracker?</strong></p>
+    <p>
+        CyberTracker is a software tool that allows non-programmers to collect field data with mobile devices. A lesser known capability is that it can also be used to create digital field guides, because it allows rich content to be displayed in conjunction with data capture fields. So the data capture system can also serve as a teaching or reference tool.
+    </p>
+
+    <p id="divfaq2"><strong id="How_much_does_CyberTracker_cost.3F">How much does CyberTracker cost?</strong></p>
+    <p>
+        CyberTracker is freeware. Over the years various organizations have contributed to the development. Some users commission features for their own use and these then become available for everyone.
+    </p>
+    <p id="divfaq3"><strong id="Where_can_I_get_the_latest_version_of_CyberTracker.3F">Where can I get the latest version of CyberTracker?</strong></p>
+    <p>
+        The most recent version is available on  this web <a href="download" title="Download">here</a>. The version numbers are always incrementing, so 3.200 is more recent than 3.195. If the version is a test version (not well tested), then it will have "(BETA)" after the build number.
+    </p>
+    <p id="divfaq4"><strong class="mw-headline" id="CyberTracker_contains_some_GIS_functionality.2C_but_I_need_more">CyberTracker contains some GIS functionality, but I need more</strong></p>
+    <p>
+        CyberTracker is primarily a data capture tool. We've been resisting the move toward extensive GIS functionality because it distracts from producing a great data capture solution. We also do not wish to compete on features with products like ESRI ArcView. If you need more GIS functionality, we recommend using ArcGIS with CyberTracker as your data-conduit.
+    </p>
+    <p id="divfaq5"><strong class="mw-headline" id="How_do_I_get_new_features_into_CyberTracker.3F">How do I get new features into CyberTracker?</strong></p>
+    <p>
+        Email justin@steventon.com with your feature request.
+    </p>
+    <p id="divfaq6"><strong class="mw-headline" id="Which_desktop_operating_system_does_CyberTracker_run_on.3F">Which desktop operating system does CyberTracker run on?</strong></p>
+    <p>
+        CyberTracker runs on all versions of Microsoft Windows, excluding Windows RT.
+    </p>
+    <p id="divfaq7"><strong class="mw-headline" id="What_mobile_devices_does_CyberTracker_support.3F">What mobile devices does CyberTracker support?</strong></p>
+    <p>
+        CyberTracker supports Windows Mobile and Android devices. If you bought a device in the last 5 years that runs Windows Mobile/CE or Android, then it will probably work. However, we currently do require touch screen support, so Smart phones without touch screens are not supported.
+    </p>
+    <p id="divfaq8"><strong class="mw-headline" id="Can_I_collect_data_with_both_Windows_Mobile_and_Android_devices_at_the_same_time.3F">Can I collect data with both Windows Mobile and Android devices at the same time?</strong></p>
+    <p>
+        Yes. You won't be able to tell which data came from which device (unless you want to).
+    </p>
+    <p id="divfaq9"><strong class="mw-headline" id="How_do_I_change_the_screen_type.2C_e.g._from_radio_list_to_check_list.3F">How do I change the screen type, e.g. from radio list to check list?</strong></p>
+    <ol>
+        <li>
+            Click the "Layout" toolbar button
+        </li>
+        <li>
+            Select the Element List Control
+        </li>
+        <li>
+            Change the "List mode" property - options are "Single select", "Multi select", etc
+        </li>
+        <li>
+            Click the "Layout" toolbar button again
+        </li>
+    </ol>
+    <p id="divfaq10"><strong class="mw-headline" id="How_can_I_install_CyberTracker_on_my_Windows_Mobile_SD_card.3F">How can I install CyberTracker on my Windows Mobile SD card?</strong></p>
+    <p>
+        When you install the application for this first time, CyberTracker will install itself onto your device using ActiveSync. At this time, you will receive message dialog like: "Install CyberTracker Client using the default application install directory?". Click "No" and you will be given the option to choose an install location, e.g. Main Memory, SD Card, etc. If you missed this dialog the first time, just uninstall CyberTracker from your device (Start-&gt;Settings-&gt;System Tab-&gt;Remove Programs) and click "Synchronize" again.
+    </p>
+    <p id="divfaq11"><strong class="mw-headline" id="Does_CyberTracker_support_collection_of_sightings_on_a_laptop_or_desktop_computer.3F">Does CyberTracker support collection of sightings on a laptop or desktop computer?</strong></p>
+    <p>
+        Yes, you can click on the "New sightings" button in "Report" mode.
+    </p>
+    <p id="divfaq12"><strong class="mw-headline" id="Why_can.27t_I_edit_data_in_a_query_table.3F">Why can't I edit data in a query table?</strong></p>
+    <p>
+        Table data is only editable if the column is bound to a single Element and the Column "Output As" field is set to "Data". If you want to edit sightings more flexibly, then use the "Edit Sighting" feature off the Edit menu.
+    </p>
+    <p id="divfaq13"><strong class="mw-headline" id="How_do_I_export_sightings_that_don.27t_have_Latitude.2FLongitude_to_an_ESRI_Shapefile.3F">How do I export sightings that don't have Latitude/Longitude to an ESRI Shapefile?</strong></p>
+    <p>
+        You can enable dummy XY generation by checking the "Generate XY on ShapeFile export" feature on the "Advanced" tab of the "Map Settings" dialog. Select "Edit View" from the toolbar when the map is selected.
+    </p>
+    <p id="divfaq14"><strong class="mw-headline" id="Why_don.27t_my_sightings_save.3F">Why don't my sightings save?</strong></p>
+    <p>
+        Applications require that you have a Save button at the end of them, i.e. if your Application is: Screen A -&gt; Screen B -&gt; Screen C, then you must have a "Save" button on Screen C. You can enable a save button by checking the "Show Save 1" or "Show Save 2" checkbox on the screen properties under the "Navigator" title. Note, typically you will also uncheck "Show Next" so that your users have no choice but to Save at the end of a sighting.
+    </p>
+    <p id="divfaq15"><strong class="mw-headline" id="Why_do_I_get_the_message_.22Time_out_of_sync.22.3F">Why do I get the message "Time out of sync"?</strong></p>
+    <p>
+        It was a common problem that data would have the wrong date/time. Now, the date/time on your device must be at least as recent as the Application you want to run. If you get this message often, the most likely reason is that your device time is wrong. Note, ActiveSync will automatically synchronize your time if you have a Partnership. Phones typically pick up the time from the carrier.
+    </p>
+    <p id="divfaq16"><strong class="mw-headline" id="Why_do_I_get_the_message_.22Version_Error_-_resync.22.3F">Why do I get the message "Version Error - resync"?</strong></p>
+    <p>
+        Resource files on the device must be created with the same version of CyberTracker that is running on the desktop. You should either resync or delete them.
+    </p>
+    <p id="divfaq17"><strong class="mw-headline" id="When_is_my_data_downloaded_from_my_device.3F">When is my data downloaded from my device?</strong></p>
+    <p>
+        CyberTracker downloads the data during a sync operation. You can force CyberTracker to download sightings from an attached device using "File-&gt;Download Data from Connected Device". If the download completed without error, then all the sightings are deleted from the device.
+    </p>
+    <p id="divfaq18"><strong class="mw-headline" id="What_are_timer_tracks.3F">What are timer tracks?</strong></p>
+    <p>
+        The timer track feature sets up a timer that takes a GPS reading at fixed intervals. You can customize how long those intervals are from 1 second up. The track system internally has 2 separate modes of operation: short interval and long interval. For short intervals (60 seconds or less), the device is prevented from going to sleep on it's own and the GPS is left permanently connected. For long intervals (more than 60 seconds), the device can be shut down and the alarm system will be used to wake it up, take a reading and shut it down again.
+    </p>
+    <p id="divfaq19"><strong class="mw-headline" id="How_can_I_edit_my_timer_tracks.3F">How can I edit my timer tracks?</strong></p>
+    <p>
+        There is no support in the CyberTracker UI for track editing. However, since the CyberTracker database is a Microsoft Access MDB file, you can open it and modify the "Waypoint2" table directly.
+    </p>
+    <p id="divfaq20"><strong class="mw-headline" id="How_do_I_make_the_screen_state_persist_between_sightings.2C_e.g._so_a_list_keeps_it.27s_selection.3F">How do I make the screen state persist between sightings, e.g. so a list keeps it's selection?</strong></p>
+    <p>
+        Several controls allow you to persist their state by using their "Retain state" property. Click the "Layout" toolbar button in "Applications" mode, select the control and check that property.
+    </p>
+    <p id="divfaq21"><strong class="mw-headline" id="What_does_the_GPS_Accuracy_number_mean.3F">What does the GPS Accuracy number mean?</strong></p>
+    <p>
+        "Accuracy" is a number that the GPS provides to give some idea of the uncertainty of the reading. This number ranges from 0 to 50 and should typically be multiplied by 10 meters (32 feet) to get an idea of the area you are dealing with. For example, a value of 3.5 means that the GPS knows you are within 35 meters of where it says you are.
+    </p>
+    <p id="divfaq22"><strong class="mw-headline" id="Does_CyberTracker_support_Differential_GPS.3F">Does CyberTracker support Differential GPS?</strong></p>
+    <p>
+        CyberTracker does not have a feature to post-process GPS data. However, if you are within North America and your GPS is WAAS enabled, then you get differential like characteristics for free.
+    </p>
+    <p id="divfaq23"><strong class="mw-headline" id="What_are_the_different_states_for_the_GPS_triangle_button.3F">What are the different states for the GPS triangle button?</strong></p>
+    <p>
+        The GPS triangle has 4 possible states:
+    </p>
+    <ol>
+        <li>
+            Empty triangle with line through it = Track timer is not set and no open connection to the GPS exists
+        </li>
+        <li>
+            Empty triangle with number in it = Track timer is enabled, but last track reading was not successful. This could be because the GPS is still acquiring satellites, or because the required GPS accuracy was not met on last attempt.
+        </li>
+        <li>
+            Empty triangle with number in it and line through it = track timer is set, but the connection to the GPS timed out and so CyberTracker is no longer trying.
+        </li>
+        <li>
+            Filled triangle = Track timer is enabled and last track reading was taken successfully
+        </li>
+    </ol>
+    <p>
+        The number in the triangle is the track timer frequency. If the navigator button size is too small (as is the case on legacy PalmOS), this may not show. In addition, the display is rounded off, e.g. 80 seconds will show as "1m" (for 1 minute), even although it really is set at 80 seconds.
+    </p>
+    <p id="divfaq24"><strong class="mw-headline" id="How_can_I_get_my_RangeFinder_and_my_GPS_to_both_auto-detect_without_conflict.3F">How can I get my RangeFinder and my GPS to both auto-detect without conflict?</strong></p>
+    <p>
+        If your RangeFinder is Bluetooth, then you cannot also have a Bluetooth GPS. The way to do this is to turn on your GPS and get it to detect first. Once CyberTracker has detected the GPS at a particular port, it will remember that for all future tries. Then do the same for the RangeFinder.
+    </p>
+    <p id="divfaq25"><strong class="mw-headline" id="What_RangeFinders_does_CyberTracker_support.3F">What RangeFinders does CyberTracker support?</strong></p>
+    <p>
+        CyberTracker supports RangeFinders that output the Laser Atlanta NMEA sentences LA1KA, LA1KC and LA1KD.
+        RangeFinders are not currently supported on Android.
+    </p>
+    <p id="divfaq26"><strong class="mw-headline" id="How_can_I_export_data_that_I_collect_back_to_my_GPS.3F">How can I export data that I collect back to my GPS?</strong></p>
+    <p>
+        CyberTracker supports export to CSV (Comma Separated Values) from the Query Table in Report mode. G7ToWin is a freeware application that can import CSV files. However, in order for this to work, you need the first column of your table to be called "Type" and have a "W" for its value. To make a table have a "W" in the first column, do this:
+    </p>
+    <ol>
+        <li>
+            Find an Element that exists in every sighting, e.g. "Begin"
+        </li>
+        <li>
+            Go to the "Elements" mode (View-&gt;Elements)
+        </li>
+        <li>
+            Find the Element "Begin" and click on "Element Properties" in the toolbar
+        </li>
+        <li>
+            Set the "Tag" property (on the first tab) to "W" (without quotes)
+        </li>
+        <li>
+            Go to the "Reports" mode (View-&gt;Reports)
+        </li>
+        <li>
+            With the Table active, click "Edit View" on the toolbar
+        </li>
+        <li>
+            Click "Add" to add a new column
+        </li>
+        <li>
+            Set "Element source" to your Element, set "Name" to "Type" and set "Output As" to Tag
+        </li>
+        <li>
+            Click "Move up" until it is the first column
+        </li>
+    </ol>
+    <p>
+        Now you should have a "W" in the first column of your table. Don't forget to add "Latitude" and "Longitude" columns as well. Click "Export" on the toolbar to export.
+    </p>
+    <p id="divfaq27"><strong class="mw-headline" id="What_is_the_difference_between_a_screen_and_a_sub-screen.3F">What is the difference between a screen and a sub-screen?</strong></p>
+    <p>
+        Screens and subscreens are identical from the systems point of view. Grouping is allowed to help the user organize their screens.
+    </p>
+    <p id="divfaq28"><strong class="mw-headline" id="How_do_Paths_work.3F">How do Paths work?</strong></p>
+    <p>
+        A path is created when sightings are connected in the map view. The path system is configured from the maps "View Properties" dialog under the "Render" tab. There are 3 Elements which control the path: Start Element, Stop Element and Join Elements(s).
+    </p><p>
+        If you do NOT set the Join Element(s), then the path will be controlled by the Start and Stop entirely, i.e. a sighting containing the "Start Element" will begin a path and it will not be terminated until a corresponding "Stop Element" occurs in a subsequent sighting. If you set the "Join Elements(s)", then the system will connect any 2 points pA and pB (with pA occurring before pB) if they meet the following requirements:
+    </p>
+    <ol>
+        <li>
+            pA and pB must come from the same PDA
+        </li>
+        <li>
+            pA must not contain the "Stop Element"
+        </li>
+        <li>
+            pB must not contain the "Start Element"
+        </li>
+        <li>
+            pA must contain the "Start Element" OR one of the "Join Elements"
+        </li>
+        <li>
+            pB must contain the "Stop Element" OR one of the "Join Elements"
+        </li>
+        <li>
+            If pA and pB both contain a "Join Element", then it must be the same one
+        </li>
+    </ol>
+    <p>
+        Note, a "Join Element" is defined as an Element that must be in each sighting for it to be considered part of the same path. The concept is that we can build different paths out of the same data, depending on what I want to connect. Some examples:
+    </p><p>
+        Connecting observations made by one particular Observer:
+        <code>
+        </code>
+    </p><code>
+<pre class="custome-pre-tag">Set "Join Element(s)" to the Name of the observer 
+</pre>
+    </code><p>
+        <code></code>
+    </p><p>
+        Connecting observations by transportation mode, e.g. Walk, Horse, Vehicle:
+        <code>
+        </code>
+    </p><code>
+<pre class="custome-pre-tag">Set the "Join Element(s)" to a category containing the "Walk", "Horse" and "Vehicle" Elements. 
+Note, this assumes that all your sightings contain the mode of transportation that was used and only one can be used at a time.
+</pre>
+    </code><p>
+        <code></code>
+    </p>
+    <p id="divfaq29"><strong class="mw-headline" id="How_does_the_Element_Formula_control_work.3F">How does the Element Formula control work?</strong></p>
+    <p>
+        The formula property is a regular expression, meaning it can hold expressions like: "1+2". If you set the formula to this, the output will be "3". However, there is also support for more complex expressions:
+    </p>
+    <ol>
+        <li>
+            "A+2" (where A is the number value of the Elements in the "Element A" property.
+        </li>
+        <li>
+            "(1 + 2) * 3" works because parentheses are supported
+        </li>
+        <li>
+            "max(1, 2)" produces "2" and "min(1, 2)" produces "1"
+        </li>
+        <li>
+            "abs(-5)" produces 5
+        </li>
+        <li>
+            "Today" works with the "Output as date" property. "Today-1" is yesterday.
+        </li>
+        <li>
+            "date(2007, 5, 20)" produces a date, see (5).
+        </li>
+        <li>
+            "if (1 &lt; 2, 3, 5)" produces "3"
+        </li>
+        <li>
+            "if (1 &gt; 2, 3, 5+1)" produces "6"
+        </li>
+    </ol>
+    <p>
+        You can place the result of the calculation in the "Result element", which will then become part of the sighting data.
+    </p><p>
+        If you put the result into a global value using the "Result global value" property, then you can later reuse that value in the formula itself. This provides the ability to do counters. Try this:
+    </p>
+    <ol>
+        <li>
+            On screen 1, drop an "Element Formula" control:
+        </li>
+        <li>
+            Set the "Formula" property to "Test + 1"
+        </li>
+        <li>
+            Set the "Result global value" property to "Test"
+        </li>
+    </ol>
+    <p>
+        Now everytime you save and return to this screen, the number will automatically increment.
+    </p>
+    <p id="divfaq30"><strong class="mw-headline" id="How_to_bind_a_bluetooth_device_on_Windows_Mobile.3F">How to bind a bluetooth device on Windows Mobile?</strong></p>
+    <p>
+        On an HP Travel Companion:
+    </p>
+    <ol>
+        <li>
+            Tap Start and then Settings
+        </li>
+        <li>
+            Tap on the Connections tab
+        </li>
+        <li>
+            Tap the Bluetooth Icon
+        </li>
+        <li>
+            Tap "Turn on" to make sure Bluetooth is enabled
+        </li>
+        <li>
+            Tap on the "Bluetooth Manager" shortcut near the bottom of the screen
+        </li>
+        <li>
+            Turn on the device you want to bind to and tap "New" on the bottom left corner of the screen
+        </li>
+        <li>
+            Tap "Explore a Bluetooth device" and tap "Next" 8. An icon should appear that describes the device you want to bind to. There may be multiple devices, but just select the one you want and tap "Next". Sometimes the screen will automatically press the next button for you.
+        </li>
+        <li>
+            Uncheck "Use a secure, encrypted connection"
+        </li>
+        <li>
+            Under "Service selection", select "Bluetooth Serial Port" and tap "Next".
+        </li>
+        <li>
+            You may be asked to enter a password. The device documentation provides this. Usually it is "0000" or "1111".
+        </li>
+    </ol>
+    <p>
+        On a Trimble GeoXM:
+    </p>
+    <ol>
+        <li>
+            Tap Start and then Settings
+        </li>
+        <li>
+            Tap on the Connections tab
+        </li>
+        <li>
+            Tap the Bluetooth Icon
+        </li>
+        <li>
+            Select "On"
+        </li>
+        <li>
+            Select the "Bonded Devices" tab
+        </li>
+        <li>
+            Select the "New" list item
+        </li>
+        <li>
+            Select the device you want to bind to and tap "Next"
+        </li>
+        <li>
+            Enter the passcode for the device. This can be found in the device manual. Usually it is "0000" or "1111".
+        </li>
+        <li>
+            Tap "Next" to create the shortcut
+        </li>
+        <li>
+            Close the input field and tap on the "Serial Ports" tab
+        </li>
+        <li>
+            In the "Client Serial Ports" box, tap "New"
+        </li>
+        <li>
+            Select the device and tap "Next"
+        </li>
+        <li>
+            Make sure "Authentication", "Encryption" and "Default Bluetooth ActiveSync" are all unchecked
+        </li>
+        <li>
+            Click "Finish"
+        </li>
+    </ol>
+    <p id="divfaq31"><strong class="mw-headline" id="What_does_.22No_Result:_Value_not_saved.22_and_.22No_Result:_Text_not_saved.22_mean.3F">What does "No Result: Value not saved" and "No Result: Text not saved" mean?</strong></p>
+    <p>
+        Text and Keypad screens require that the "Result Element" property be set. This specifies the storage Element for the result from the text editor and keypad screens. The error message occurs to prevent accidental data loss.
+    </p>
+    <p id="divfaq32"><strong class="mw-headline" id="What_is_.22Kiosk_Mode.22_and_how_can_I_set_it_up.3F">What is "Kiosk Mode" and how can I set it up?</strong></p>
+    <p>
+        Kiosk's are fixed purpose devices. The goal of Kiosk mode is to turn a device into a fixed purpose CyberTracker device. To configure this, open the "Application Properties" dialog during screen design and check the "Kiosk Mode" box. Save your database and synchronize the Application to your device. Notice that the application cannot be closed in the usual ways. The task bar is also hidden.
+    </p><p>
+        Kiosk mode is often combined with a password keypad to allow administrators to work on the system in the field.
+    </p>
+    <p id="divfaq33"><strong class="mw-headline" id="How_can_.22Kiosk_Mode.22_be_bypassed_in_the_field.3F">How can "Kiosk Mode" be bypassed in the field?</strong></p>
+    <p>
+        Place an "Element Keypad" control on a screen and set the "Password" property to "1234". Set the "Password auto next" property to "Shutdown". When the correct password is entered, CyberTracker will close the current Application, thereby terminating Kiosk mode.
+    </p>
+    <p id="divfaq34"><strong class="mw-headline" id="CyberTracker_reports_that_it_cannot_install_to_a_Windows_Mobile_device:_INF_error">CyberTracker reports that it cannot install to a Windows Mobile device: INF error</strong></p>
+    <p>
+        To install CyberTracker on the device manually:
+    </p>
+    <ol>
+        <li>
+            On the desktop CyberTracker icon, right click and select "Open File Location"
+        </li>
+        <li>
+            Look for client5.arm.cab and copy this file to your Windows Mobile 6.1 device
+        </li>
+        <li>
+            Open File Explorer on the device and navigate to the file, then double tap it
+        </li>
+    </ol>
+    <p>
+        This should install CyberTracker. After this, the desktop should communicate with it properly.
+    </p>
+</div>
+
+
+@code {
+    [Inject]
+    protected IJSRuntime JsRuntime { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+            JsRuntime.InvokeVoidAsync("onBlazorReady");
+    }
+}
