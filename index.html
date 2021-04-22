@@ -75,7 +75,24 @@
                 $("#divdevicecontent").slideToggle("slow");
             });
 
+            $("#advancedtopicshideshow").click(function () {
+                if ($('#divAdvancedtopics').is(":visible")) {
+                    $("#advancedtopicshideshow").text('show');
+                }
+                else {
+                    $("#advancedtopicshideshow").text('hide');
+                }
+                $("#divAdvancedtopics").slideToggle("slow");
+            });
+
             $(".device-content").click(function (e) {
+                var divid = $(this).attr('id');
+                $('html,body').animate({
+                    scrollTop: $("#div" + divid).offset().top - 60
+                }, 'slow');
+            });
+
+            $(".advanced-topics").click(function (e) {
                 var divid = $(this).attr('id');
                 $('html,body').animate({
                     scrollTop: $("#div" + divid).offset().top - 60

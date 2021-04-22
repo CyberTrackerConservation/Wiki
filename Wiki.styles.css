@@ -10,7 +10,7 @@
 }
 
 .sidebar[b-hfcouxxziw] {
-    background-color: #29211C;
+    background-color: #f6f6f6;
 }
 
 .top-row[b-hfcouxxziw] {
@@ -75,8 +75,8 @@
 }
 
 .top-row[b-nqpvdwqg0g] {
-    height: 3.5rem;
-    background-color: #211201;
+    height: 9.5rem;
+    background-color: #f6f6f6;
 }
 
 .navbar-brand[b-nqpvdwqg0g] {
@@ -104,7 +104,7 @@
     }
 
     .nav-item[b-nqpvdwqg0g]  a {
-        color: #d7d7d7;
+        color: #0645ad;
         border-radius: 4px;
         height: 2.4rem;
         display: flex;
@@ -113,12 +113,12 @@
     }
 
 .nav-item[b-nqpvdwqg0g]  a.active {
-    background-color: rgba(255,255,255,0.25);
+    background-color: #c3c0c0;
     color: white;
 }
 
 .nav-item[b-nqpvdwqg0g]  a:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: #c3c0c0;
     color: white;
 }
 
