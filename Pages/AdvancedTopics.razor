@@ -1,0 +1,745 @@
+﻿@page "/advanced_topics"
+
+<h3>Advanced Topics</h3>
+<hr />
+
+<div id="bodyContent">
+    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+        <div id="toc" class="toc">
+            <div><strong>Contents</strong>  [<a href="javascript:void(0);" id="advancedtopicshideshow">hide</a>]</div>
+            <br />
+
+            <div id="divAdvancedtopics" class="border border-padding">
+                <ul class="hide-bullets">
+                    <li class="toclevel-1 tocsection-1">
+                        <a href="javascript:void(0);" class="advanced-topics" id="advancedtopics1"><span class="tocnumber">1</span> <span class="toctext">Database servers</span></a>
+                        <ul class="hidebullets">
+                            <li class="toclevel-2 tocsection-2"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics2"><span class="tocnumber">1.1</span> <span class="toctext">Introduction</span></a></li>
+                            <li class="toclevel-2 tocsection-3"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics3"><span class="tocnumber">1.2</span> <span class="toctext">Installing and configuring MySQL</span></a></li>
+                            <li class="toclevel-2 tocsection-4"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics4"><span class="tocnumber">1.3</span> <span class="toctext">Installing and configuring PostgreSQL</span></a></li>
+                            <li class="toclevel-2 tocsection-5"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics5"><span class="tocnumber">1.4</span> <span class="toctext">Creating a connection</span></a></li>
+                            <li class="toclevel-2 tocsection-6"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics6"><span class="tocnumber">1.5</span> <span class="toctext">Converting an existing database</span></a></li>
+                            <li class="toclevel-2 tocsection-7"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics7"><span class="tocnumber">1.6</span> <span class="toctext">Multiple simultaneous connections</span></a></li>
+                            <li class="toclevel-2 tocsection-8"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics8"><span class="tocnumber">1.7</span> <span class="toctext">Using Export Data Tables</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="toclevel-1 tocsection-9">
+                        <a href="javascript:void(0);" class="advanced-topics" id="advancedtopics9"><span class="tocnumber">2</span> <span class="toctext">Controlling via the command line</span></a>
+                        <ul class="hidebullets">
+                            <li class="toclevel-2 tocsection-10"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics10"><span class="tocnumber">2.1</span> <span class="toctext">Introduction</span></a></li>
+                            <li class="toclevel-2 tocsection-11"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics11"><span class="tocnumber">2.2</span> <span class="toctext">System Folders</span></a></li>
+                            <li class="toclevel-2 tocsection-12"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics12"><span class="tocnumber">2.3</span> <span class="toctext">Commands</span></a></li>
+                            <li class="toclevel-2 tocsection-13"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics13"><span class="tocnumber">2.4</span> <span class="toctext">Examples</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="toclevel-1 tocsection-14">
+                        <a href="javascript:void(0);" class="advanced-topics" id="advancedtopics14"><span class="tocnumber">3</span> <span class="toctext">Remote synchronization</span></a>
+                        <ul class="hidebullets">
+                            <li class="toclevel-2 tocsection-15"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics15"><span class="tocnumber">3.1</span> <span class="toctext">Introduction</span></a></li>
+                            <li class="toclevel-2 tocsection-16"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics16"><span class="tocnumber">3.2</span> <span class="toctext">Getting set up</span></a></li>
+                            <li class="toclevel-2 tocsection-17"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics17"><span class="tocnumber">3.3</span> <span class="toctext">Testing the system</span></a></li>
+                            <li class="toclevel-2 tocsection-18"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics18"><span class="tocnumber">3.4</span> <span class="toctext">Other configurations</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="toclevel-1 tocsection-19">
+                        <a href="javascript:void(0);" class="advanced-topics" id="advancedtopics19"><span class="tocnumber">4</span> <span class="toctext">Keys</span></a>
+                        <ul class="hidebullets">
+                            <li class="toclevel-2 tocsection-20"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics20"><span class="tocnumber">4.1</span> <span class="toctext">Introduction</span></a></li>
+                            <li class="toclevel-2 tocsection-21"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics21"><span class="tocnumber">4.2</span> <span class="toctext">Filter sample</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="toclevel-1 tocsection-22">
+                        <a href="javascript:void(0);" class="advanced-topics" id="advancedtopics22"><span class="tocnumber">5</span> <span class="toctext">GPS Outliers</span></a>
+                        <ul class="hidebullets">
+                            <li class="toclevel-2 tocsection-23"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics23"><span class="tocnumber">5.1</span> <span class="toctext">What is an outlier?</span></a></li>
+                            <li class="toclevel-2 tocsection-24"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics24"><span class="tocnumber">5.2</span> <span class="toctext">What is Dilution of Precision (DOP)?</span></a></li>
+                            <li class="toclevel-2 tocsection-25"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics25"><span class="tocnumber">5.3</span> <span class="toctext">What causes Outliers?</span></a></li>
+                            <li class="toclevel-2 tocsection-26"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics26"><span class="tocnumber">5.4</span> <span class="toctext">Outliers and CyberTracker</span></a></li>
+                            <li class="toclevel-2 tocsection-27"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics27"><span class="tocnumber">5.5</span> <span class="toctext">Challenges with filtering readings</span></a></li>
+                            <li class="toclevel-2 tocsection-28">
+                                <a href="javascript:void(0);" class="advanced-topics" id="advancedtopics28"><span class="tocnumber">5.6</span> <span class="toctext">Using outlier detection in CyberTracker</span></a>
+                                <ul class="hidebullets">
+                                    <li class="toclevel-3 tocsection-29"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics29"><span class="tocnumber">5.6.1</span> <span class="toctext">Application properties</span></a></li>
+                                    <li class="toclevel-3 tocsection-30"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics30"><span class="tocnumber">5.6.2</span> <span class="toctext">Configure GPS action</span></a></li>
+                                    <li class="toclevel-3 tocsection-31"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics31"><span class="tocnumber">5.6.3</span> <span class="toctext">Element properties</span></a></li>
+                                    <li class="toclevel-3 tocsection-32"><a href="javascript:void(0);" class="advanced-topics" id="advancedtopics32"><span class="tocnumber">5.6.4</span> <span class="toctext">Accuracy filter in action</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <br />
+        <h4 id="divadvancedtopics1">
+            <span id="Database_servers">Database servers</span>
+        </h4>
+        <hr />
+        <p id="divadvancedtopics2">
+            <strong id="Introduction">Introduction</strong>
+        </p>
+        <p>
+            A CyberTracker database is normally a Microsoft Access database or .MDB file. This is convenient because a single file can hold the entire database. However, only one user can connect at a time and the database size is limited to 2 GB.
+        </p>
+        <p>
+            CyberTracker supports connections to Server databases such as MySQL and Microsoft SQL Server. This is done using a connection file, which tells CyberTracker how to communicate with the server.
+        </p>
+        <p id="divadvancedtopics3">
+            <strong id="Installing_and_configuring_MySQL">Installing and configuring MySQL</strong>
+        </p>
+        <p>
+            Download and install MySQL from <a href="http://dev.mysql.com/downloads/mysql/5.0.html">http://dev.mysql.com/downloads/mysql/5.0.html</a>. Version 5.1 or later is recommended.
+        </p>
+        <p>
+            Add the following line to \MySQL\MySQL Server 5.1\my.ini:
+        </p>
+        <code>
+            <pre class="custome-pre-tag">max_allowed_packet = 64M </pre>
+        </code>
+        <p>
+            Download and install MySQL Connector from <a href="http://dev.mysql.com/downloads/connector/odbc/5.1.html">http://dev.mysql.com/downloads/connector/odbc/5.1.html</a>.
+        </p>
+        <p id="divadvancedtopics4"><strong id="Installing_and_configuring_PostgreSQL">Installing and configuring PostgreSQL</strong></p>
+        <p>
+            Download and install PostgreSQL from <a href="http://www.postgresql.org/download">http://www.postgresql.org/download</a>.
+        </p>
+        <p>
+            When installing, also install the ODBC driver (or download and install it separately from here <a href="https://odbc.postgresql.org/">https://odbc.postgresql.org/</a>).
+        </p>
+        <p>
+            In the PostgreSQL console, create a new database.
+        </p>
+        <p>
+            In CyberTracker, use the <code>Tools-&gt;Create database connection</code> option to set up a connection in the usual way.
+            Don't forget to set the type rules to "PostgreSQL".
+        </p>
+        <p>
+            Examine the resulting EDB file and make sure that <code>ByteaAsLongVarBinary=1</code>.
+        </p>
+        <p id="divadvancedtopics5"><strong id="Creating_a_connection">Creating a connection</strong></p>
+        <p>
+            CyberTracker supports connecting to a database via an EDB (External Database) file. An EDB file is an XML file that tells CyberTracker how to connect to the database. Here is an example EDB file:
+        </p>
+        <code>
+            <pre class="custome-pre-tag">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                 &lt;Database&gt;
+                    &lt;TypeRules&gt;MySQL&lt;/TypeRules&gt;
+                     &lt;ConnectionString&gt;
+                        Provider=MSDASQL.1;
+                         User ID=root;
+                         Password=root;
+                         Persist Security Info=True;
+                         Data Source=MySQL DataSource;
+                         Initial Catalog=MyDatabaseName
+                    &lt;/ConnectionString&gt;
+                &lt;/Database&gt;
+                </pre>
+        </code>
+
+        <ul>
+            <li>
+                TypeRules specifies how to treat data types. Acceptable values are "MySQL" and "SQL Server". This is to handle differences in SQL database types.
+            </li>
+            <li>
+                User ID and Password should be set according to your credentials.
+            </li>
+            <li>
+                Data Source is the name of a User Data Source as configured by the windows "ODBC Data Source Administrator". This tool binds a database driver to a data source so that applications can access it easily. The tool can be run by using Start-&gt;Run and typing "odbcad32.exe". Make sure that an ODBC driver is available for your database before setting this up. For MySQL, this is the "MySQL Connector".
+            </li>
+            <li>
+                Initial Catalog is the name of the database. This database can be created using the "CREATE DATABASE MyDatabaseName" SQL command.
+            </li>
+        </ul>
+        <p id="divadvancedtopics6"><strong id="Converting_an_existing_database">Converting an existing database</strong></p>
+        <p>
+            Once you can successfully connect to the server database by opening the .EDB file (using File-&gt;Open from the CyberTracker main menu), the next step is to import an existing database. The most common way to do this is:
+        </p>
+        <ol>
+            <li>
+                Load the old MDB database, using File-&gt;Open
+            </li>
+            <li>
+                Export it to a CTX file, using File-&gt;Export
+            </li>
+            <li>
+                Open the new EDB database, using File-&gt;Open
+            </li>
+            <li>
+                Import the CTX file, using File-&gt;Import
+            </li>
+            <li>
+                Save the new database
+            </li>
+        </ol>
+        <p id="divadvancedtopics7"><strong id="Multiple_simultaneous_connections">Multiple simultaneous connections</strong></p>
+        <p>
+            By distributing the EDB file within your organization, multiple users can connect to the database simultaneously. This has 2 implications to be aware of:
+        </p>
+        <ol>
+            <li>
+                As new sightings come in from remote sources, users will need to press "F5" (or use Edit-&gt;Refresh) to see new sightings
+            </li>
+            <li>
+                Conflicts may arise if multiple users are making changes to the same database. To restrict this, end-users should be restricted in the operations they can perform. In all cases, the most recently saved data wins.
+            </li>
+        </ol>
+        <p id="divadvancedtopics8"><strong id="Using_Export_Data_Tables">Using Export Data Tables</strong></p>
+        <p>
+            An Export Data Table is a table in a database that holds captured sighting data in an exported tabular form.
+        </p><p>
+            In order to view sighting data within CyberTracker, it is <i>projected</i> onto a table. This simply means that each sighting attribute is mapped to a column. This table is a very natural way to view and query the data.
+        </p><p>
+            CyberTracker has the ability to export the Query View table to a database table. However, doing this requires some setup: the table must already be created in the target database and must have certain pre-defined fields.
+        </p><p>
+            To get started, create a table in your database named "Export" with the following SQL command:
+        </p>
+        <code>
+            <pre class="custome-pre-tag">CREATE TABLE Export (ID CHAR(38) NOT NULL UNIQUE, Date DATE, Time TIME, Latitude DOUBLE, LONGITUDE DOUBLE, Note LONGTEXT)
+        </pre>
+        </code>
+        <p>
+            The perform the following steps:
+        </p>
+        <ol>
+            <li>
+                Load CyberTracker and open a report with sightings
+            </li>
+            <li>
+                With the Query Editor selected, click on the "Export View" button
+            </li>
+            <li>
+                In the "Save As Type" drop down, select "External database" and select the database you want to export to
+            </li>
+            <li>
+                Click Okay. Note you will get a message about overwriting this file, but it can be ignored (the .EDB file will not be overwritten, but duplicate data in the "Export" table will be)
+            </li>
+        </ol>
+        <p>
+            Finally, use the following SQL command to see the data in the "Export" table in the database:
+        </p>
+        <code>
+            <pre class="custome-pre-tag">SELECT * FROM Export
+        </pre>
+        </code>
+        <p>
+            Here is the list of field names (and their associated types) which CyberTracker recognizes specially:
+        </p>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th class="text-center">
+                        Field name
+                    </th>
+                    <th class="text-center">
+                        SQL Type
+                    </th>
+                    <th class="text-center">
+                        Description
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <code>Id</code>
+                    </td>
+                    <td>
+                        <code>CHAR(38) NOT NULL UNIQUE</code>
+                    </td>
+                    <td>
+                        The primary Id of the sighting. This must be indexed for merging reasons.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>DeviceId</code>
+                    </td>
+                    <td>
+                        <code>CHAR(38)</code>
+                    </td>
+                    <td>
+                        The Id of the device used to capture the observation. This can be used to group sightings created by a single observer.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>Deleted</code>
+                    </td>
+                    <td>
+                        <code>SMALLINT</code>
+                    </td>
+                    <td>
+                        Whether or not the sighting has been deleted. Using this field allows deleted sightings to be correctly merged.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            The UI component of this feature is designed mainly for experimentation. It can be more fully controlled via the command line interface.
+        </p>
+        <p>
+            CyberTracker matches fields by name, so the column name in CyberTracker must be the same as the field name in the table to work correctly. Column names can be changed using the "View Properties" dialog.
+        </p>
+        <h4 id="divadvancedtopics9"><span id="Controlling_via_the_command_line">Controlling via the command line</span></h4>
+        <p id="divadvancedtopics10"><strong id="Introduction_2">Introduction</strong></p>
+        <p>
+            Several CyberTracker features can be triggered via the command-line. This functionality is usually intended for server side scripts that operate on the database as a whole. To use the command line, use:
+        </p><code>
+<pre class="custome-pre-tag">Start-&gt;Run "cmd.exe"
+cd &lt;directory where CyberTracker is installed&gt;
+ct3 /?
+</pre>
+        </code>
+        <p>
+            Note:
+        </p>
+        <ol>
+            <li>
+                The install directory is either: "\Program Files\CyberTracker Software\CyberTracker3" or "%userprofile%\AppData\Local\CyberTracker3"
+            </li>
+            <li>
+                Do not use "ct3.exe /?", because this will trigger the windows application. Instead, just type "ct3".
+            </li>
+        </ol>
+        <p>
+            "System" folders are mentioned below. These are sub-folders of "Documents\CyberTracker Databases\System". This folder can be opened in Explorer to see the way data moves through the system.
+        </p>
+        <p id="divadvancedtopics11"><strong id="System_Folders">System Folders</strong></p>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th class="text-center">
+                        Folder
+                    </th>
+                    <th class="text-center">
+                        Description
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <code>Orphans</code>
+                    </td>
+                    <td>
+                        Data that could not be inserted into a database is placed into this folder. Typically is caused by renaming of a database. The system does not process this folder again, so users should access this data using the "Data recovery console" feature on the "Tools" menu in CyberTracker.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>Backup</code>
+                    </td>
+                    <td>
+                        Once data has been successfully added to a database, it is moved to this folder. If the database later becomes corrupt, it acts as a second line of defense.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>ClientSD</code>
+                    </td>
+                    <td>
+                        When creating sightings on the local machine, these are backed up to this location if the application has the "Use SD card for backup" option checked. This directory is only used if no removable storage card is found.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>CrashDump</code>
+                    </td>
+                    <td>
+                        If CyberTracker crashes, the changes that have been made since the last save are exported to a CTX file and placed here.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>History</code>
+                    </td>
+                    <td>
+                        When a database update occurs and new history (past sightings) need to be uploaded to a client, then they are placed in this folder.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>Incoming</code>
+                    </td>
+                    <td>
+                        When files are downloaded from the internet, they are temporarily held in this location.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>Logs</code>
+                    </td>
+                    <td>
+                        CyberTracker keeps a log of all sync operations. Check out the download.txt file in this location to understand errors.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>Outgoing</code>
+                    </td>
+                    <td>
+                        Once files have been downloaded via a local sync, they may need to ultimately be sent to an internet server. Check out the "Send on Sync" option on the "Database Properties" dialog. This is a holding location for them before they are processed.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>Recover</code>
+                    </td>
+                    <td>
+                        When data is recovered from a PDA or SD card, it is placed in this folder.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>Settings</code>
+                    </td>
+                    <td>
+                        Local system settings, e.g. the current client screen selection and zoom level.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>Staging</code>
+                    </td>
+                    <td>
+                        Data that is waiting to be inserted into a database is placed into this folder. This folder is processed by CyberTracker routinely, e.g. on startup, on sync, etc. If the data cannot be uploaded into the target database for any reason, data will be moved to the <code>Orphan</code> folder.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="divadvancedtopics12"><strong id="Commands">Commands</strong></p>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th class="text-center" width="160px">
+                        Command line option
+                    </th>
+                    <th class="text-center">
+                        Description
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <code>/Silent</code>
+                    </td>
+                    <td>
+                        Disable console output.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/CreateCtx</code>
+                    </td>
+                    <td>
+                        Create a CTX file from the files in the specified directory.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/DownloadPda</code>
+                    </td>
+                    <td>
+                        Connect to a mobile device and download any data that is on it. As soon as data is downloaded from the PDA, it is placed in the Staging (see above) folder.<br>
+                        <p>
+                            Exit code 300 = No connections made<br>
+                            Exit code 301 = Connections, but no data<br>
+                            Exit code 302 = Connections and data downloaded
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/DownloadUrl</code>
+                    </td>
+                    <td>
+                        Use the download settings of the associated <code>/Database</code> to connect to a URL. Incoming data is placed in the Staging (see above) folder. If an /ExportDatabase, /ExportRule and /ExportTable are also specified, then this downloaded data will be exported.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/OneOnly</code>
+                    </td>
+                    <td>
+                        Used with DownloadUrl to process one file at a time.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/UploadPda</code>
+                    </td>
+                    <td>
+                        Upload application to the mobile device. Takes a database name, ctx name or directory. The directory is an unpacked ctx file.<br>
+                        <p>
+                            Exit code 100 = Directory not found<br>
+                            Exit code 101 = Failed to read from directory<br>
+                            Exit code 110 = No applications found in directory<br>
+                            Exit code 120 = Failed to sync<br>
+                            Exit code 200 = Sync successful<br>
+                            Exit code 201 = Install triggered
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/UploadUrl</code>
+                    </td>
+                    <td>
+                        Process the Outgoing (see above) folder.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/Datafile</code>
+                    </td>
+                    <td>
+                        Specify a data file (.CTX) for use with data operations, for example as an input for the /ExportTable mechansim. If the full path is not present, the system will attempt to locate the file in "Documents\My CyberTracker Databases".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/Database</code>
+                    </td>
+                    <td>
+                        Specify the database to use for data operations, for example as an input for the /ExportTable mechanism.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/ExportRule</code>
+                    </td>
+                    <td>
+                        The export rule file. The export rule file can be created by using the "Export View" toolbar button with the "Query Editor" active. Use the "Save as type" drop down on the File Save dialog to select "Export Rule File".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/ExportDatabase</code>
+                    </td>
+                    <td>
+                        The target database for export operations. Must be accompanied by a /ExportRule and /ExportTable. The input for this operation comes from a /Datafile, /Database or /DownloadURL command. If the full path is not present, the system will attempt to locate the file in "Documents\My CyberTracker Databases".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/ExportTable</code>
+                    </td>
+                    <td>
+                        The table name in the target database. This table must already exist and be properly configured. See "Using Export Data Tables" in CyberTracker Server Setup.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>/ExportXml</code>
+                    </td>
+                    <td>
+                        Export data in the specified data file to an XML file.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="divadvancedtopics13"><strong id="Examples">Examples</strong></p>
+        <code>
+<pre class="custome-pre-tag">ct3 /Database mydb.mdb /DownloadUrl
+</pre>
+        </code><p>
+            Open the database mydb.mdb, get the download settings and execute a download using the parameters in the "Database Properties" dialog. This is equivalent to clicking the "Download" button on the "Database Properties" dialog box.
+        </p><code>
+<pre class="custome-pre-tag">ct3 /DownloadPda
+</pre>
+        </code><p>
+            Download all data from the currently connected device.
+        </p><code>
+            <pre class="custome-pre-tag">ct3 /Database myin.edb /DownloadUrl /ExportDatabase myout.edb /ExportRule myrule.exr /ExportTable mytable
+    </pre>
+        </code><p>
+            Open the database myin.edb and get the download settings. Download all the files available using the parameters in the "Database Properties" dialog. Export this data to the myTable table in the myout.edb database. Note, myin.edb and myout.edb can be the same database.
+        </p><p>
+            Using this method is the preferred way of configuring a schedule task that keeps an export table up to date, because only the newly downloaded data is considered for export.
+        </p>
+        <h4 id="divadvancedtopics14">
+            <span id="Remote_synchronization">Remote synchronization</span>
+        </h4>
+        <hr />
+        <p id="divadvancedtopics15"><strong id="Introduction_3">Introduction</strong></p>
+        <p>
+            If your project involves multiple users sending data to a single database, then this feature may be of interest to you. Remote Synchronization involves CyberTracker desktops and PDAs sending data over the internet to a central server. The database administrator can then download this sighting data into a consolidated database.
+        </p>
+        <p id="divadvancedtopics16"><strong id="Getting_set_up">Getting set up</strong></p>
+        <ol>
+            <li>
+                Get an FTP site. These are widely available and come with most web hosting solutions. Use a search engine for "Web hosting" and pick the one you are most comfortable with. They will provide you with an FTP site, username and password. If your organization has an IT department, contract them first. They may already have something set up.
+            </li>
+            <li>
+                Use an FTP client like <a href="http://www.ninite.com">FileZilla</a> and log in
+            </li>
+            <li>
+                Create a directory <code>CTData</code>
+            </li>
+            <li>
+                Open CyberTracker, load the database and click "File-&gt;Database Properties"
+            </li>
+            <li>
+                In the "Upload Settings", setup the Url to: ftp://ftp.yoursite.com/CTData and also set user name and password
+            </li>
+            <li>
+                Leave "Download Settings" as "[Same as Upload]"
+            </li>
+            <li>
+                Ensure "Send on Client" is checked
+            </li>
+            <li>
+                Click the "Download" button. This will report connection errors if any.
+            </li>
+            <li>
+                Close the dialog, save your database and re-sync your PDAs
+            </li>
+        </ol>
+        <p>
+            Note: if the PDAs do not have an internet connection and your users sync their data to their own PCs, then check "Send on Sync". This will cause any data downloaded off the PDA to be sent to the same central server.
+        </p><p>
+            Note: the auto-send frequency will cause CyberTracker to send data in the background at timed intervals. This is useful if you would like a consistent incoming data stream and are less concerned with battery life.
+        </p>
+        <p id="divadvancedtopics17"><strong id="Testing_the_system">Testing the system</strong></p>
+        <ol>
+            <li>
+                On the PDA, create a few sightings
+            </li>
+            <li>
+                Open the "Options" dialog
+            </li>
+            <li>
+                One of the tabs should be "Send Data". If not, make sure the "Send on Client" checkbox is enabled (see above)
+            </li>
+            <li>
+                Tap the button where it says "Tap to send". This will kick start the sending process.
+            </li>
+            <li>
+                If the send fails for any reason, check your connection settings. If any changes are made in the "Database Properties" section on the desktop, PDAs will need to be re-synced.
+            </li>
+            <li>
+                Go to the "File-&gt;Database Properties" dialog and click the "Download" button
+            </li>
+            <li>
+                Once downloading is complete, close the dialog
+            </li>
+            <li>
+                The new sightings should appear the report
+            </li>
+        </ol>
+        <p id="divadvancedtopics18"><strong id="Other_configurations">Other configurations</strong></p>
+        <p>
+            If the FTP server is also the database server, then it is possible to bypass a step. In this case, the Download Settings protocol should be "File share", with the url being of the form "\\server\directory", or possibly even "c:\ftpfiles".
+        </p><p>
+            If all the devices are on the same wireless network, it is possible to bypass FTP altogether. In this case, set the "Upload settings" protocol can be "File share".
+        </p><p>
+            HTTP and HTTPS are also provided for upload. However these don't work for download, because these protocols don't provide file-system like functionality.
+        </p><p>
+            Data can also be uploaded and downloaded directly via the CyberTracker Command-Line. This allows a database administrator to create a scheduled task on the server which routinely picks up data files and adds them to the database.
+        </p>
+        <h4 id="divadvancedtopics19"><span id="Keys">Keys</span></h4>
+        <hr />
+        <p id="divadvancedtopics20"><strong id="Introduction_4">Introduction</strong></p>
+        <p>
+            CyberTracker has a feature called <i>Keys</i> which allows progressive refinement of data on lists. As data is entered, you can filter a result set down to just those matching specific attributes. For example, a bird list can be keyed on the colors and characteristics of each species.
+        </p><p>
+            Normally this information would be entirely contained within CyberTracker, but it is often convenient to describe Keys in Excel and paste them into CyberTracker when complete. The Screen Element Filter dialog contains a "Paste From Excel" button that can be used for this purpose.
+        </p>
+        <p id="divadvancedtopics21"><strong id="Filter_sample">Filter sample</strong></p>
+        <p>
+            <img alt="Ct3key.png" src="img/Ct3key.png" width="985" height="146">
+        </p>
+        <p>
+            To configure a key outside of CyberTracker, follow these steps:
+        </p>
+        <ol>
+            <li>
+                Create a key in Excel in the above format (colors don't matter)
+            </li>
+            <li>
+                Select all populated cells
+            </li>
+            <li>
+                Copy to the clipboard
+            </li>
+            <li>
+                Paste into CyberTracker
+            </li>
+        </ol>
+        <p>
+            The above key and demo can be <a href="files/CTKEY.zip" class="internal" title="CTKEY.zip">downloaded here</a>.
+        </p>
+        <h4 id="divadvancedtopics22"><span id="GPS_Outliers">GPS Outliers</span></h4>
+        <hr />
+        <p id="divadvancedtopics23"><strong id="What_is_an_outlier.3F">What is an outlier?</strong></p>
+        <p>
+            An outlier is a GPS point provided by the GPS that is incorrect by more than 300 meters. In addition, the GPS does not provide any direct information that identifies the point as such. Outliers are sometimes just a single bad reading among good readings, but other times outliers may persist for a minute or more.
+        </p>
+        <p id="divadvancedtopics24">
+            <strong id="What_is_Dilution_of_Precision_.28DOP.29.3F">What is Dilution of Precision (DOP)?</strong>
+        </p>
+        <p>
+            Dilution of Precision (DOP) is a number provided by the GPS that describes the quality of the satellite geometry and hence the precision of a reading. Check out <a href="https://en.wikipedia.org/wiki/Dilution_of_precision_(GPS)">this</a> article for a more detailed description.
+        </p>
+        <p id="divadvancedtopics25">
+            <strong id="What_causes_Outliers.3F">What causes Outliers?</strong>
+        </p>
+        <p>
+            In principle, outliers should not happen. However, possibly because of the requirement to provide a fix very quickly, some GPS receivers have created heuristics that generate poor readings when they are first powered on. It's difficult to match the underlying GPS chipset with individual device manufacturers, because this is often hidden by software layers. Most causal GPS users do not experience outliers, because of the way the GPS is typically used. They turn the device on and leave it on more or less continuously throughout their travel.
+        </p>
+        <p id="divadvancedtopics26">
+            <strong id="Outliers_and_CyberTracker">Outliers and CyberTracker</strong>
+        </p>
+        <p>
+            CyberTracker presents a unusual use-case. In order to conserve battery, the system is often configured to turn the GPS on just long enough to get a reading and then turn it off again. If this pattern occurs throughout a patrol, then it creates the ideal environment for outliers to happen.<br>
+            Note that if the track timer is set at 60 seconds or less, CyberTracker leaves the GPS on.<br>
+            Research has shown that Outliers do have distinguishing characteristics. On some devices, the DOP is very high, but this is not guaranteed. On other devices, the travel speed is unreasonably high.<br>
+            CyberTracker therefore provides a way to filter data from the GPS by both DOP and Speed. While this is not guaranteed to completely eliminate outliers, it removes many of them.
+        </p>
+        <p id="divadvancedtopics27">
+            <strong id="Challenges_with_filtering_readings">Challenges with filtering readings</strong>
+        </p>
+        <p>
+            The largest issue is that by filtering readings by DOP and speed, CyberTracker may not actually take enough readings in the field. For example, suppose we set the DOP filter to "2" and the speed to "10". This means that if the DOP is higher than "2" or we happen to be travelling faster than 10 km/h, CyberTracker will not take a reading. In other words, a simple change in your application on the desktop could effectively prevent CyberTracker from using the GPS! Therefore it is vital that your use of this system be well tested on devices before going into the field.
+        </p>
+        <p id="divadvancedtopics28">
+            <strong id="Using_outlier_detection_in_CyberTracker">Using outlier detection in CyberTracker</strong>
+        </p>
+        <p>
+            CyberTracker has three levels for specifying GPS behavior: application properties, configure GPS action and Element properties.
+        </p>
+        <p id="divadvancedtopics29"><strong id="Application_properties">Application properties</strong></p>
+        <p>
+            The "Edit Application" dialog contains a GPS tab. This tab allows the specification of the "Accuracy filter". Make sure "Filter enabled" is checked and then the settings will apply.
+        </p>
+        <p id="divadvancedtopics30"><strong id="Configure_GPS_action">Configure GPS action</strong></p>
+        <p>
+            Drop a "Configure GPS Action" control onto a screen. These settings will override the "Application properties", once the enters a screen with this action control on it.
+        </p>
+        <p id="divadvancedtopics31"><strong id="Element_properties">Element properties</strong></p>
+        <p>
+            In CyberTracker version 3.391 or later, CyberTracker has "Accuracy filter" settings for each Element. These can be reached using the "Edit Element" button when creating new Elements. If an Element with these settings is present in a Sighting, these settings will be used. Element based accuracy settings will trump all other accuracy settings.
+        </p>
+        <p id="divadvancedtopics32"><strong id="Accuracy_filter_in_action">Accuracy filter in action</strong></p>
+        <p>
+            If the accuracy is set using the Element properties, then the name of the Element appears just below the fix type. For example, in the image below, the "Walk" Element was used to specify the accuracy settings. If the settings were not specified using Element properties, then this line will not be visible. Note that if the required accuracy is not met, the metric shows in red.<br>
+            <a><img alt="TravelMode.png" src="img/TravelMode.png" width="240" height="320"></a><br>
+            <br>
+            A demo of using Element properties to set the accuracy can be <a href="files/TravelModeDemo.CTX">downloaded here</a>.
+        </p>
+    </div>
+</div>
+
+@code {
+    [Inject]
+    protected IJSRuntime JsRuntime { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+            JsRuntime.InvokeVoidAsync("onBlazorReady");
+    }
+}
+

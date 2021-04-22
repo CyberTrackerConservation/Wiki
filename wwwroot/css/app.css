@@ -53,12 +53,15 @@ hr {
     margin-top: -2px;
     margin-bottom: 0.6rem;
 }
+
 .card-body {
     padding-top: 0.5rem;
 }
+
 .card .col-img {
     max-width: 122px;
 }
+
 .card {
     box-shadow: 0 10px 20px 5px rgb(0 0 0 / 7%);
     border: 0;
@@ -74,7 +77,7 @@ hr {
     top: 40%;
     left: 49%;
     position: relative;
-    margin-top:10px
+    margin-top: 10px
 }
 
 @keyframes spin {
@@ -175,3 +178,27 @@ hr {
     }
 }
 /*loader css*/
+
+
+/*pre tag*/
+.custome-pre-tag {
+    padding: 1em;
+    border: 1px solid #ddd;
+    color: black;
+    background-color: #f9f9f9;
+}
+/*pre tag*/
+
+ul.hide-bullets {
+    /*-webkit-padding-start: 0;*/
+    padding: 0;
+    list-style-type: none;
+}
+
+.hidebullets {
+    list-style-type: none;
+}
+
+.border-padding {
+    padding: 15px 0px 0px 15px;
+}
