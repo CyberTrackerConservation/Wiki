@@ -85,6 +85,16 @@
                 $("#divAdvancedtopics").slideToggle("slow");
             });
 
+            $("#divtutorialvideoshideshow").click(function () {
+                if ($('#divTutorialVideos').is(":visible")) {
+                    $("#divtutorialvideoshideshow").text('show');
+                }
+                else {
+                    $("#divtutorialvideoshideshow").text('hide');
+                }
+                $("#divTutorialVideos").slideToggle("slow");
+            });
+
             $(".device-content").click(function (e) {
                 var divid = $(this).attr('id');
                 $('html,body').animate({
@@ -93,6 +103,13 @@
             });
 
             $(".advanced-topics").click(function (e) {
+                var divid = $(this).attr('id');
+                $('html,body').animate({
+                    scrollTop: $("#div" + divid).offset().top - 60
+                }, 'slow');
+            });
+
+            $(".tutorial-videos").click(function (e) {
                 var divid = $(this).attr('id');
                 $('html,body').animate({
                     scrollTop: $("#div" + divid).offset().top - 60
