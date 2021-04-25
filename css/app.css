@@ -202,3 +202,8 @@ ul.hide-bullets {
 .border-padding {
     padding: 15px 0px 0px 15px;
 }
+@media screen and (max-width: 600px) {
+    .custom-video {
+        width:100%;
+    }
+}
